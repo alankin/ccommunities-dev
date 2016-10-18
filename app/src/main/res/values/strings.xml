@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CCommunities-Dev</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_publication_title">Publication</string>
+    <string name="username_textView">Username</string>
+    <string name="username_hint">Enter your username</string>
+    <string name="password_textview">Password</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="login_button">Login</string>
 </resources>
