@@ -21,7 +21,7 @@ public class PublicationFragment extends Fragment {
 
 
     public PublicationFragment() {
-        // Required empty public constructor
+
     }
 
     @Override
@@ -32,7 +32,6 @@ public class PublicationFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_publication, container, false);
 
         fab = (FloatingActionButton) view.findViewById(R.id.fab);
