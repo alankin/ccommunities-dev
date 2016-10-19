@@ -1,4 +1,4 @@
-package ccomunities.alashka.com.ccommunities_dev.adapters;
+package ccomunities.alashka.com.ccommunities_dev.Adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

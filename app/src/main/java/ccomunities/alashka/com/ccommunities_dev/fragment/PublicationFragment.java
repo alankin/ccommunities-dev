@@ -1,16 +1,13 @@
-package ccomunities.alashka.com.ccommunities_dev.fragments;
+package ccomunities.alashka.com.ccommunities_dev.Fragment;
 
 import android.os.Bundle;
 
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.content.Intent;
-
-import java.io.Console;
 
 import ccomunities.alashka.com.ccommunities_dev.NewPublicationActivity;
 import ccomunities.alashka.com.ccommunities_dev.R;

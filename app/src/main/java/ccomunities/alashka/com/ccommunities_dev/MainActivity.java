@@ -7,9 +7,9 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
 import ccomunities.alashka.com.ccommunities_dev.Model.Community;
-import ccomunities.alashka.com.ccommunities_dev.fragments.PublicationFragment;
-import ccomunities.alashka.com.ccommunities_dev.fragments.UserFragment;
-import ccomunities.alashka.com.ccommunities_dev.adapters.ViewPagerAdapter;
+import ccomunities.alashka.com.ccommunities_dev.Fragment.PublicationFragment;
+import ccomunities.alashka.com.ccommunities_dev.Fragment.UserFragment;
+import ccomunities.alashka.com.ccommunities_dev.Adapter.ViewPagerAdapter;
 
 
 public class MainActivity extends AppCompatActivity {

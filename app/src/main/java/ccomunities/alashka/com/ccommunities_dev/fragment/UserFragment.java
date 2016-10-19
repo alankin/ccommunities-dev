@@ -1,4 +1,4 @@
-package ccomunities.alashka.com.ccommunities_dev.fragments;
+package ccomunities.alashka.com.ccommunities_dev.Fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

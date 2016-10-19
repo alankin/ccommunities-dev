@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ccomunities.alashka.com.ccommunities_dev.fragments.PublicationFragment">
+    tools:context="ccomunities.alashka.com.ccommunities_dev.Fragment.PublicationFragment">
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
