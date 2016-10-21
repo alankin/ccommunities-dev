@@ -22,6 +22,11 @@ public class Publication extends SugarRecord {
     public Publication(String title, String description, Date date, String place, User user) {
     }
 
+    public Publication(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
+
     public String getTitle() {
         return title;
     }
