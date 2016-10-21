@@ -11,7 +11,7 @@ public class Achievement extends SugarRecord {
 
     String name;
     String description;
-    String type;
+    String typeAchievement;
     Integer requiredQuantity;
 
     public Achievement() {
@@ -36,12 +36,12 @@ public class Achievement extends SugarRecord {
         this.description = description;
     }
 
-    public String getType() {
-        return type;
+    public String getTypeAchievement() {
+        return typeAchievement;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setTypeAchievement(String type) {
+        this.typeAchievement = type;
     }
 
     public Integer getRequiredQuantity() {

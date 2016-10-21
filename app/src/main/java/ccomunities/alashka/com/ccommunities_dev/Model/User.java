@@ -10,6 +10,7 @@ import java.util.List;
 public class User extends SugarRecord {
 
     String username;
+    String password;
     String name;
     String lastName;
     String email;
@@ -19,7 +20,15 @@ public class User extends SugarRecord {
     public User() {
     }
 
-    public User(String username, String name, String lastName, String email, String pathPhoto, Community community) {
+    public User(String username, String name, String lastName, String email, String pathPhoto, Community community, String password) {
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getUsername() {
@@ -70,19 +79,23 @@ public class User extends SugarRecord {
         this.community = community;
     }
 
-    public List<UserAchievement> getAchievements(){
+    public List<UserAchievement> getAchievements() {
         return UserAchievement.find(UserAchievement.class, "user = ?", String.valueOf(this.getId()));
     }
 
-    public List<Comment> getComments(){
+    public List<Comment> getComments() {
         return Comment.find(Comment.class, "user = ?", String.valueOf(this.getId()));
     }
 
-    public List<Publication> getPublications(){
+    public List<Publication> getPublications() {
         return Publication.find(Publication.class, "user = ?", String.valueOf(this.getId()));
     }
 
-    public List<Rate> getRates(){
+    public List<Rate> getRates() {
         return Rate.find(Rate.class, "user = ?", String.valueOf(this.getId()));
+    }
+
+    public static String addFilter(String field) {
+        return "filter[" + field + "]";
     }
 }
