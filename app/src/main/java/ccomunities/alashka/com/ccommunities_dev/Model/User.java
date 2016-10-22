@@ -94,8 +94,4 @@ public class User extends SugarRecord {
     public List<Rate> getRates() {
         return Rate.find(Rate.class, "user = ?", String.valueOf(this.getId()));
     }
-
-    public static String addFilter(String field) {
-        return "filter[" + field + "]";
-    }
 }

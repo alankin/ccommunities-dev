@@ -3,6 +3,7 @@ package ccomunities.alashka.com.ccommunities_dev.Network;
 import java.util.List;
 import java.util.Map;
 
+import ccomunities.alashka.com.ccommunities_dev.Model.Publication;
 import ccomunities.alashka.com.ccommunities_dev.Model.User;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -27,11 +28,14 @@ public interface CCommunitiesService {
     /*@GET("users?{user}&?{pass}")
     Call<User> login(@Path("user") String user, @Path("pass") String pass);*/
 
-    /*@GET("posts")
-    Call<List<Post>> getPosts(@Query("user_id") int user_id);*/
+    @GET("/publications")
+    Call<List<Publication>> getPublications(@Query("user_id") long user_id);
 
-    @GET("users")
+    @GET("/users")
     Call<List<User>> getUsers();
+
+    @GET("/publications")
+    Call<List<Publication>> getAllPublications();
 
     /*@POST("posts")
     Call<Post> post(@Body Post post, @Query("user_id") int user_id);*/

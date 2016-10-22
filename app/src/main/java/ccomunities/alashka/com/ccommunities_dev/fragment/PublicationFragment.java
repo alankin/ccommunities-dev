@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 import ccomunities.alashka.com.ccommunities_dev.Adapter.PublicationAdapter;
 import ccomunities.alashka.com.ccommunities_dev.Model.Publication;
+import ccomunities.alashka.com.ccommunities_dev.Network.PublicationAsyncTask;
 import ccomunities.alashka.com.ccommunities_dev.NewPublicationActivity;
 import ccomunities.alashka.com.ccommunities_dev.R;
 
@@ -23,7 +24,7 @@ public class PublicationFragment extends Fragment {
     private FloatingActionButton fab;
 
     private RecyclerView recycler;
-    private RecyclerView.Adapter adapter;
+    private PublicationAdapter adapter;
     private RecyclerView.LayoutManager layoutManager;
 
 
@@ -53,13 +54,13 @@ public class PublicationFragment extends Fragment {
 
         List items = new ArrayList();
 
-        items.add(new Publication("Title 1", "This is a description description 1 description description description description description description description description description description description description description description description description end"));
+        /*items.add(new Publication("Title 1", "This is a description description 1 description description description description description description description description description description description description description description description description end"));
         items.add(new Publication("Title 2", "This is a description 2 description description description description description description "));
         items.add(new Publication("Title 3", "This is a description 3 description description description description description description description description "));
         items.add(new Publication("Title 4", "This is a  description 4 description description description description description description description description description description "));
         items.add(new Publication("Title 5", "This is a  description 4 description description description description description description description description description description "));
         items.add(new Publication("Title 6", "This is a  description 4 description description description description description description description description description description "));
-        items.add(new Publication("Title 7", "This is a  description 4 description description description description description description description description description description "));
+        items.add(new Publication("Title 7", "This is a  description 4 description description description description description description description description description description "));*/
 
         recycler = (RecyclerView) view.findViewById(R.id.recycler_publication);
         //setHasFixedSize() para optimizar las operaciones con los ítems
@@ -68,10 +69,16 @@ public class PublicationFragment extends Fragment {
         layoutManager = new LinearLayoutManager(view.getContext());
         recycler.setLayoutManager(layoutManager);
 
-        adapter = new PublicationAdapter(items);
+        adapter = new PublicationAdapter(getActivity());
         recycler.setAdapter(adapter);
+
+        PublicationAsyncTask task = new PublicationAsyncTask(this);
+        task.execute();
 
         return view;
     }
 
+    public PublicationAdapter getAdapter() {
+        return adapter;
+    }
 }
