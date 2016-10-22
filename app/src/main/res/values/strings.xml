@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CCommunities-Dev</string>
+    <string name="app_name">Christian Community</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tab_publication_title">Publication</string>
     <string name="username_textView">Username</string>
@@ -16,4 +16,9 @@
     <string name="hint_date">Date</string>
     <string name="icon_new_publication">Icon new publication</string>
     <string name="fecha_example">10-12-2016</string>
+    <string name="edit_text_new_publication">New Publication</string>
+    <string name="hint_place">Place</string>
+    <string name="menu_item_logout">Logout</string>
+    <string name="hint_password_npublication">Password</string>
+    <string name="content_image_login">Image Login</string>
 </resources>
